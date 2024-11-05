@@ -1,0 +1,10 @@
+<button [ngClass]="{'image1': value === -1, 'image2': value === 1, 'image0': value === 0}">
+  @switch (value){
+    @case (-1){
+      X
+    }
+    @case (1){
+      O
+    }
+  }
+</button>

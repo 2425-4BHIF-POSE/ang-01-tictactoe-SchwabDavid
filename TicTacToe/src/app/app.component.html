@@ -1,0 +1,18 @@
+<div class="center">
+  <div class="grid">
+    <ng-container *ngFor="let row of grid(); let rowIndex = index">
+      <ng-container *ngFor="let val of row; let colIndex = index">
+        <app-field [value]="val" (click)="updateGrid(rowIndex, colIndex)"></app-field>
+      </ng-container>
+    </ng-container>
+  </div>
+
+  <div class="result">
+    <p>Player Turn: {{ turn() === -1 ? 'X' : 'O' }}</p>
+
+    <ng-container *ngIf="winner() !== 0">
+      <p>{{ winner() === -1 ? 'X Wins' : winner() === 1 ? 'O Wins' : 'Draw' }}</p>
+      <button mat-button (click)="resetGame()">Reset</button>
+    </ng-container>
+  </div>
+</div>

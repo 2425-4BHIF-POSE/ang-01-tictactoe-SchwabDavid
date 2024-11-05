@@ -1,0 +1,27 @@
+button {
+  border-radius: 0.7rem;
+  color: #ea1e84;
+  border: 2px solid #00eaff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 3rem;
+  width: 9rem;
+  height: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.image1 {
+  background-image: url('../../../assets/img/huhu.png');
+}
+
+.image2 {
+  background-image: url('../../../assets/img/hihi.png');
+}
+
+.image0 {
+  background-image: url('../../../assets/img/haha.png');
+}
